@@ -1,5 +1,6 @@
 from pico2d import *
 from random import *
+from math import *
 
 def hand_event():
     global Loop
