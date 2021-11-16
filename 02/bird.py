@@ -40,11 +40,11 @@ class Bird:
 
     def draw(self):
         if self.dir == 1:
-            self.image.clip_composite_draw(int(self.frame) * 100, 0, 100, 100, 0, '', self.x,self.y,100, 100)
+            self.image.clip_composite_draw(int(self.frame) * 100, 0, 100, 100, 0, '', self.x + 25,self.y - 25,100, 100)
         elif self.dir == -1:
-            self.image.clip_composite_draw(int(self.frame) * 100, 0, 100, 100, 0, 'h', self.x, self.y,100, 100)
+            self.image.clip_composite_draw(int(self.frame) * 100, 0, 100, 100, 0, 'h', self.x + 25, self.y - 25,100, 100)
        #self.image.clip_draw(int(self.frame) * 100, 0, 100, 100, self.x, self.y)
-        draw_rectangle(*self.get_bb())
+        #draw_rectangle(*self.get_bb())
 
 
     def handle_event(self, event):
